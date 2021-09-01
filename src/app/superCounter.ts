@@ -18,13 +18,4 @@ export class SuperCounterClass {
     }
     this.value = newValue;
   }
-
-  //   secondsIncrement() {
-  //     this.value = this.value + 1;
-  //   }
-
-  //   setIntrvl() {
-  //     this.clicked = true;
-  //     setInterval(() => this.secondsIncrement(), 1000);
-  //   }
 }

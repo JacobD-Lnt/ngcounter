@@ -9,6 +9,7 @@ import { SuperDuperCounterClass } from "../superDuperCounter";
 })
 export class SuperDuperCountersComponent implements OnInit {
   @Input() counter: SuperDuperCounterClass;
+  @Output() notify: EventEmitter<string> = new EventEmitter<string>();
 
   ngOnInit(): void {}
 
@@ -17,5 +18,9 @@ export class SuperDuperCountersComponent implements OnInit {
   public activate() {
     this.counter.startTimer();
     this.buttonText = ":)";
+  }
+
+  notifyParent() {
+   this.notify.emit("counters");
   }
 }
