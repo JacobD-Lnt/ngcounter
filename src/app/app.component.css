@@ -1,0 +1,12 @@
+button {
+  margin: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+div {
+  margin: 10px;
+  font-weight: bold;
+  color: black;
+}

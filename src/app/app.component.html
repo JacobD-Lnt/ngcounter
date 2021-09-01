@@ -1,5 +1,23 @@
 <h1>Angular Counter</h1>
-<button (click)="newCounter()">Create new counter</button>
+
+<!-- <button (click)="newCounter()">Create new counter</button> -->
+<!-- <button (click)="newCounter()">Create new counter</button> -->
+
+<button (click)="createCounter()">Create new counter</button>
+
+<div>
+  <counters *ngFor="let counter of counters" [counter]="counter"> </counters>
+  <super-counters
+    *ngFor="let superCounter of superCounters"
+    [counter]="superCounter"
+  ></super-counters>
+  <super-duper-counters
+    *ngFor="let superDuperCounter of superDuperCounters"
+    [counter]="superDuperCounter"
+  ></super-duper-counters>
+</div>
+
+<!-- <button (click)="newCounter()">Create new counter</button>
 <div>
   <div *ngFor="let counter of counters">
     <div>
@@ -18,4 +36,12 @@
       <button (click)="superCounter.increment()">+</button>
     </div>
   </div>
-</div>
+  <div *ngFor="let superDuperCounter of superDuperCounters">
+    <div>
+      super duper counter:
+      <button [disabled]="superDuperCounter.clicked" (click)="superDuperCounter.setIntrvl()">start</button>
+      {{superDuperCounter.value}}
+     
+    </div>
+  </div>
+</div> -->

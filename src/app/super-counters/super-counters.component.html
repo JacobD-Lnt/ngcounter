@@ -1,0 +1,10 @@
+<!-- <p>super-counters works!</p> -->
+
+<div>
+  Super Counter:
+  <button [disabled]="counter.value == 0" (click)="counter.decrement()">
+    -
+  </button>
+  {{ counter.value }}
+  <button (click)="counter.increment()">+</button>
+</div>

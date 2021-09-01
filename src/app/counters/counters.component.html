@@ -1,0 +1,19 @@
+<!-- <p>counters works!</p> -->
+
+<!-- <div *ngFor="let counter of counters">
+  <div>
+    counter:
+    <button (click)="counter.decrement()">-</button>
+    {{ counter.value }}
+    <button (click)="counter.increment()">+</button>
+  </div>
+</div> -->
+
+<div>
+  Counter:
+  <button [disabled]="counter.value == 0" (click)="counter.decrement()">
+    -
+  </button>
+  {{ counter.value }}
+  <button (click)="counter.increment()">+</button>
+</div>

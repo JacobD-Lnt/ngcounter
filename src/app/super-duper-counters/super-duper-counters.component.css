@@ -1,0 +1,21 @@
+button {
+  margin: 2px;
+  background-color: rgb(97, 97, 255);
+  color: black;
+  font-weight: bold;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: blue;
+}
+
+button:hover:not(:disabled) {
+  background-color: skyblue;
+}
+
+div {
+  margin: 5px;
+  font-weight: bold;
+  color: darkblue;
+}
